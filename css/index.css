@@ -1,0 +1,1098 @@
+html,body{
+	position: relative;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+ #music{
+ 	position: fixed;
+ 	right: 2%;
+ 	top: 2%;
+ 	width: 15%;
+ 	height: 9%;
+ 	background:url('../images/yyan.png') no-repeat;
+ 	background-size: cover;
+ 	z-index: 99;
+ 	
+ }
+ .music_play{
+ 	 animation:  rotate 2s  linear infinite  ;
+ 	-moz-animation:  rotate 2s linear infinite; 
+ 	-webkit-animation:  rotate 2s linear infinite;
+ 	-o-animation:  rotate  2s linear  infinite;
+ }
+ @-webkit-keyframes rotate {
+ 	0%{transform: rotate(0deg)}	
+ 	100%{transform: rotate(360deg)}
+ 	
+ }
+ /*上划*/
+#button{
+	position: fixed;
+	bottom: 80px;
+	left: 50%;
+	width: 50px;
+	height: 50px;
+	z-index: 99;
+	transform: rotate(180deg)
+}
+ #button .up_down{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+    background: url("../images/s_xman_guide_f3aebfe5.png") no-repeat -21px -3px;
+    animation:  Up 1s  linear alternate  infinite  ;
+    -moz-animation:    Up  1s  linear alternate  infinite; 
+    -webkit-animation:   Up  1s  linear alternate  infinite;
+    -o-animation:    Up 1s  linear alternate  infinite;
+ }	
+@-webkit-keyframes Up {
+	0%{
+		transform: scale(1, 1);
+		opacity: 0.5;
+	}
+	100%{
+		transform: scale(2, 2);
+		opacity: 1;
+	}
+	
+}
+
+.box1 {
+	width: 100%;
+	height: 100%;
+}
+.p1{
+	background:url("../images/p1/di-01.jpg") no-repeat;
+}
+.p1_sound{
+	width: 16%;
+	height: 9%;
+	background:url("../images/p1/tu-01.png") no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 54%;
+	animation:p1_sound 5s infinite;
+	-moz-animation:p1_sound  5s infinite; 
+	-webkit-animation:p1_sound 5s infinite;
+	-o-animation:p1_sound 5s infinite;
+	opacity: 0;
+}
+@-webkit-keyframes p1_sound{
+	0%{opacity:0;}
+	25%{opacity:1;
+	}
+	50%{opacity:0;}
+	75%{opacity:1;}
+	100%{opacity:0;}
+}
+.p1_sound-2{
+	width: 16%;
+	height: 8%;
+	background:url("../images/p1/tu-02.png") no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 49%;
+	left: 12%;
+	animation:p1_sound infinite;
+	-moz-animation:p1_sound infinite; 
+	-webkit-animation:p1_sound infinite;
+	-o-animation:p1_sound infinite;
+	opacity: 0;
+}
+.p1_sound-3{
+	width:16%;
+	height:8%;
+	background:url("../images/p1/tu-03.png")no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+	top:71%;
+	left:16%;
+	animation:p1_sound infinite;
+	-moz-animation:p1_sound infinite; 
+	-webkit-animation:p1_sound infinite;
+	-o-animation:p1_sound infinite;
+	opacity: 0;
+}
+.p1_sound-4{
+	width:29%;
+	height:6%;
+	background:url("../images/p1/tu-04.png")no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+	top:38%;
+	left:45%;
+	animation:p1_sound infinite;
+	-moz-animation:p1_sound infinite; 
+	-webkit-animation:p1_sound infinite;
+	-o-animation:p1_sound infinite;
+	opacity: 0;
+}
+.p1_cloud{
+	width:30%;
+	height:6%;
+	background:url("../images/p1/tu-05.png")no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+	top:15%;
+	left:43%;
+	animation:p1_cloud forwards;
+	-moz-animation:p1_cloud forwards; 
+	-webkit-animation:p1_cloud forwards;
+	-o-animation:p1_cloud forwards;
+	opacity: 0;
+}
+@-webkit-keyframes p1_cloud{
+	0%{
+		left:100%;
+	}
+	100%{
+		left:43%;
+		opacity: 1;
+	}
+}
+
+.p1_cloud-2{
+	width:20%;
+	height:4%;
+	background:url("../images/p1/tu-06.png")no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+	top:9%;
+	left:74%;
+	animation:p1_cloud-2  forwards ;
+	-moz-animation:p1_cloud-2 forwards; 
+	-webkit-animation:p1_cloud-2 forwards;
+	-o-animation:p1_cloud-2 forwards;
+	opacity: 0;
+}
+@-webkit-keyframes p1_cloud-2{
+	0%{
+		left: 100%;
+	}
+	100%{
+		left:74%;
+		opacity: 1
+	}
+}
+
+.p1_lushang{
+	width:47%;
+	height:5%;
+	background:url("../images/p1/tu-07.png") no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+	left:3%;
+	top:12%;
+	animation:p1_left  forwards ;
+	-moz-animation:p1_left forwards; 
+	-webkit-animation:p1_left forwards;
+	-o-animation:p1_left forwards;
+	opacity: 0;
+}
+/*左到右*/
+@-webkit-keyframes p1_left{
+	0%{
+
+		left: -100%;
+		opacity: 1
+	}
+	100%{
+		left:10%;
+		opacity: 1
+	}
+}
+.p1_xiangxiang{
+	width:47%;
+	height:5%;
+	background:url("../images/p1/tu-08.png") no-repeat;
+	background-size: 100% 100%;
+	position:absolute;
+	left:50%;
+	top:22%;
+	animation:p1_right  forwards ;
+	-moz-animation:p1_right forwards; 
+	-webkit-animation:p1_right forwards;
+	-o-animation:p1_right forwards;
+	opacity: 0;
+}
+
+ /* 右到左 */
+@-webkit-keyframes p1_right{
+	0%{
+		left: 100%;
+		opacity: 1
+	}
+	100%{
+		left:40%;
+		opacity: 1
+	}
+}
+
+/* 第二屏 */
+.p2{
+	background:url("../images/p2/di-02.jpg")no-repeat;
+}
+
+.p2_left-boy{
+	width:26%;
+	height:32%;
+	background:url("../images/p2/tu-03.png")no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom:0%;
+    left: 7%; 
+    animation:p2_left-boy  forwards ;
+    -moz-animation:p2_left-boy forwards; 
+    -webkit-animation:p2_left-boy forwards;
+    -o-animation:p2_left-boy forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes p2_left-boy{
+	0%{
+		left: 100%;
+		opacity: 1
+	}
+	100%{
+		left:7%;
+		opacity: 1
+	}
+}
+
+.p2_center-Boy{
+	width:39%;
+	height:32%;
+	background:url("../images/p2/tu-01.png")no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom:0%;
+    left: 35%; 
+    animation:p2_center-Boy  forwards ;
+    -moz-animation:p2_center-Boy forwards; 
+    -webkit-animation:p2_center-Boy forwards;
+    -o-animation:p2_center-Boy forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes p2_center-Boy{
+	0%{
+		left: 100%;
+		opacity: 1
+	}
+	100%{
+		left:35%;
+		opacity: 1
+	}
+}
+
+.p2_around{
+	width:18%;
+	height:11%;
+	background:url("../images/p2/tu-05.png")no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:58%;
+    left: 27%; 
+    animation:p1_sound infinite  ;
+    -moz-animation:p1_sound infinite; 
+    -webkit-animation:p1_sound infinite;
+    -o-animation:p1_sound infinite;
+    opacity: 0;
+}
+
+.p2_exhale{
+	width:8%;
+	height:5%;
+	background:url("../images/p2/tu-02.png")no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:78%;
+    left: 31%; 
+    animation:p1_sound infinite  ;
+    -moz-animation:p1_sound infinite; 
+    -webkit-animation:p1_sound infinite;
+    -o-animation:p1_sound infinite;
+    opacity: 0;
+}
+
+.p2_maam{
+	width:26%;
+	height:32%;
+	background:url("../images/p2/tu-04.png")no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	bottom:0%;
+    right:0; 
+    animation:p2_maam forwards  ;
+    -moz-animation:p2_maam forwards; 
+    -webkit-animation:p2_maam forwards;
+    -o-animation:p2_maam forwards;
+    opacity: 0;
+}
+
+@-webkit-keyframes p2_maam{
+	0%{
+		left: 100%;
+		opacity: 1
+	}
+	100%{
+		left:75%;
+		opacity: 1
+	}
+}
+
+
+.p2-piaopiao{
+	width:47%;
+	height:5%;
+	background:url("../images/p2/tu-06.png")no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left:3%;
+    top:8%; 
+    animation: p1_left forwards  ;
+    -moz-animation: p1_left forwards; 
+    -webkit-animation: p1_left forwards;
+    -o-animation: p1_left forwards;
+    opacity: 0;
+}
+
+
+.p2-dengdao{
+	width:47%;
+	height:5%;
+	background:url("../images/p2/tu-07.png")no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left:46%;
+    top:15%; 
+    animation: p1_right forwards  ;
+    -moz-animation: p1_right forwards; 
+    -webkit-animation: p1_right forwards;
+    -o-animation: p1_right forwards;
+    opacity: 0;
+}
+
+
+/* 第三屏 */
+.p3{
+	background: url('../images/p3/di-03.jpg') no-repeat;
+}
+.p3_boy{
+		width:47%;
+		height:43%;
+		background:url("../images/p3/tu-03.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		left:16%;
+	    bottom:0%; 
+	    animation:p3_boy forwards  ;
+	    -moz-animation:p3_boy forwards; 
+	    -webkit-animation:p3_boy forwards;
+	    -o-animation:p3_boy forwards;
+	    opacity: 0;
+}
+
+@-webkit-keyframes p3_boy{
+	0%{
+		left: -100%;
+		opacity: 1
+	}
+	100%{
+		left:16%;
+		opacity: 1
+	}
+}
+.p3_boy_voice{
+		width:25%;
+		height:14%;
+		background:url("../images/p3/tu-01.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:56%;
+	    left:45%; 
+	    animation:p3_boy_voice linear forwards  ;
+	    -moz-animation:p3_boy_voice linear forwards; 
+	    -webkit-animation:p3_boy_voice linear forwards;
+	    -o-animation:p3_boy_voice linear forwards;
+	    opacity: 0;
+}
+
+
+@-webkit-keyframes p3_boy_voice{
+	
+	0%{opacity:1;}
+	25%{opacity:0;}
+	50%{opacity:1;}
+	75%{opacity:0;}
+	100%{opacity:1;}
+}
+
+.p3_hand{
+		width:15%;
+		height:11%;
+		background:url("../images/p3/tu-04.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:56%;
+	    left:75%; 
+	    animation:p3_hand linear forwards  ;
+	    -moz-animation:p3_hand linear forwards; 
+	    -webkit-animation:p3_hand linear forwards;
+	    -o-animation:p3_hand linear forwards;
+	    transform-origin: bottom center
+}
+@-webkit-keyframes p3_hand {
+	0%{transform:rotateZ(-8deg);}
+	20%{transform:rotateZ(8deg);}
+	40%{transform:rotateZ(-8deg);}
+	60%{transform:rotateZ(8deg);}
+	80%{transform:rotateZ(-8deg);}
+	100%{transform:rotateZ(8deg)}
+}
+.p3_hand-voice{
+		width:17%;
+		height:9%;
+		background:url("../images/p3/tu-02.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:48%;
+	    left:83%; 
+	    animation:p3_boy_voice linear forwards  ;
+	    -moz-animation:p3_boy_voice linear forwards; 
+	    -webkit-animation:p3_boy_voice linear forwards;
+	    -o-animation:p3_boy_voice linear forwards;
+	    opacity: 0;
+}
+
+.p3_cloud_large{
+		width:32%;
+		height:10%;
+		background:url("../images/p3/tu-05.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:21%;
+	    left:66%; 
+	    animation:p3_cloud_large linear forwards  ;
+	    -moz-animation:p3_cloud_large linear forwards; 
+	    -webkit-animation:p3_cloud_large linear forwards;
+	    -o-animation:p3_cloud_large linear forwards;
+	    opacity: 0;
+}
+@-webkit-keyframes p3_cloud_large {
+	0%{left:100%;opacity: 1}	
+	100%{left:66%;opacity: 1}	
+}
+.p3_cloud_small{
+		width:27%;
+		height:6%;
+		background:url("../images/p3/tu-06.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:28%;
+	    left:2%; 
+	    animation:p3_cloud_small linear forwards  ;
+	    -moz-animation:p3_cloud_small linear forwards; 
+	    -webkit-animation:p3_cloud_small linear forwards;
+	    -o-animation:p3_cloud_small linear forwards;
+	    opacity: 0;
+}
+
+@-webkit-keyframes p3_cloud_small {
+	0%{left:100%;opacity: 1}	
+	100%{left:2%;opacity: 1}	
+}
+.p3_scenic{
+		width:47%;
+		height:5%;
+		background:url("../images/p3/tu-07.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:8%;
+	    left:8%; 
+	    animation:p3_scenic linear forwards  ;
+	    -moz-animation:p3_scenic linear forwards; 
+	    -webkit-animation:p3_scenic linear forwards;
+	    -o-animation:p3_scenic linear forwards;
+	    opacity: 0;
+}
+
+@-webkit-keyframes p3_scenic {
+	0%{left:100%;opacity: 1}	
+	100%{left:8%;opacity: 1}	
+}
+.p3_about{
+		width:47%;
+		height:5%;
+		background:url("../images/p3/tu-08.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:15%;
+	    left:44%; 
+	    animation:p3_about  forwards  ;
+	    -moz-animation:p3_about forwards; 
+	    -webkit-animation:p3_about  forwards;
+	    -o-animation:p3_about  forwards;
+	    opacity: 0;
+}
+@-webkit-keyframes p3_about{
+	0%{left:-100%;opacity: 1}	
+	100%{left:44%;opacity: 1}	
+}
+
+/* 屏幕4 */
+.tu4{
+	background: url('../images/p4/di-04.jpg') no-repeat ;
+
+}
+.p4-sweat{
+		width:11%;
+		height:10%;
+		background:url("../images/p4/tu-01.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		bottom:41%;
+	    left:75%; 
+	    animation:p1_sound linear infinite  ;
+	    -moz-animation:p1_sound linear infinite; 
+	    -webkit-animation:p1_sound linear infinite;
+	    -o-animation:p1_sound linear infinite;
+	    opacity: 0;
+}
+.p4-tremble{
+		width:30%;
+		height:12%;
+		background:url("../images/p4/tu-02.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:66%;
+	    left:58%; 
+	    animation:p1_sound linear infinite  ;
+	    -moz-animation:p1_sound linear infinite; 
+	    -webkit-animation:p1_sound linear infinite;
+	    -o-animation:p1_sound linear infinite;
+	    opacity: 0;
+}
+.p4-jiusuan{
+		width:47%;
+		height:5%;
+		background:url("../images/p4/tu-03.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:6%;
+	    left:8%; 
+	    animation:p3_scenic forwards  ;
+	    -moz-animation:p3_scenic forwards; 
+	    -webkit-animation:p3_scenic forwards;
+	    -o-animation:p3_scenic forwards;
+	    opacity: 0;
+}
+.p4-budeni{
+		width:47%;
+		height:5%;
+		background:url("../images/p4/tu-04.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:13%;
+	    left:44%; 
+	    animation: p3_about forwards  ;
+	    -moz-animation: p3_about forwards; 
+	    -webkit-animation: p3_about forwards;
+	    -o-animation: p3_about forwards;
+	    opacity: 0;
+}
+.p4-cloud{
+		width:47%;
+		height:5%;
+		background:url("../images/p4/tu-05.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:18%;
+	    left:44%; 
+	    animation: p4-cloud forwards  ;
+	    -moz-animation: p4-cloud forwards; 
+	    -webkit-animation: p4-cloud forwards;
+	    -o-animation: p4-cloud forwards;
+	    opacity: 0;
+}
+@-webkit-keyframes p4-cloud{
+	0%{left:100%;opacity: 1}	
+	100%{left:44%;opacity: 1}	
+}
+.p5{
+	background: url('../images/p5/di-05.jpg') no-repeat;
+}
+.p5_surprised{
+		width:93%;
+		height:10%;
+		background:url("../images/p5/tu-01.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:49%;
+	    left:0%; 
+	    animation: p1_sound linear infinite  ;
+	    -moz-animation: p1_sound linear infinite; 
+	    -webkit-animation: p1_sound linear infinite;
+	    -o-animation: p1_sound linear infinite;
+	    opacity: 0;
+}
+.p5_boy{
+		width:60%;
+		height:41%;
+		background:url("../images/p5/tu-02.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		bottom:0%;
+	    left:2%; 
+	    animation: p5_boy linear forwards  ;
+	    -moz-animation: p5_boy linear forwards; 
+	    -webkit-animation: p5_boy linear forwards;
+	    -o-animation: p5_boy linear forwards;
+	    opacity: 0;
+}
+@-webkit-keyframes p5_boy{
+	0%{left:-100%;opacity: 1}	
+	100%{left:2%;opacity: 1}	
+}
+
+.p5_lantern{
+		width:6%;
+		height:13%;
+		background:url("../images/p5/tu-03.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:38%;
+	    left:25%; 
+	    animation: p3_hand linear alternate  infinite  ;
+	    -moz-animation: p3_hand linear alternate  infinite; 
+	    -webkit-animation: p3_hand linear  alternate infinite;
+	    -o-animation: p3_hand linear  alternate infinite;
+	    transform-origin: top center;
+}
+.p5_boy-call{
+		width:26%;
+		height:15%;
+		background:url("../images/p5/tu-04.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:78%;
+	    left:32%; 
+	    animation: p3_boy_voice  forwards   ;
+	    -moz-animation: p3_boy_voice  forwards ; 
+	    -webkit-animation: p3_boy_voice  forwards ;
+	    -o-animation: p3_boy_voice  forwards ;
+	    opacity: 0;
+}
+.p5_quack{
+		width:47%;
+		height:5%;
+		background:url("../images/p5/tu-05.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:5%;
+	    left:10%; 
+	    animation: p1_left  forwards   ;
+	    -moz-animation: p1_left  forwards ; 
+	    -webkit-animation: p1_left  forwards ;
+	    -o-animation: p1_left  forwards ;
+	    opacity: 0;
+}
+.p5_number{
+		width:47%;
+		height:5%;
+		background:url("../images/p5/tu-06.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:10%;
+	    left:44%; 
+	    animation: p1_right forwards   ;
+	    -moz-animation: p1_right forwards ; 
+	    -webkit-animation: p1_right forwards ;
+	    -o-animation: p1_right forwards ;
+	    opacity: 0;
+}
+.p6{
+	background:url('../images/p6/di-06.jpg') no-repeat;
+}
+.p6_cloud{
+		width:37%;
+		height:13%;
+		background:url("../images/p6/tu-01.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:11%;
+	    left:2%; 
+	    animation:  p3_cloud_small  forwards   ;
+	    -moz-animation:  p3_cloud_small  forwards ; 
+	    -webkit-animation:  p3_cloud_small  forwards ;
+	    -o-animation:  p3_cloud_small  forwards ;
+	    opacity: 0;
+}
+.p6_crow{
+		width:19%;
+		height:7%;
+		background:url("../images/p6/tu-02.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:27%;
+	    left:69%; 
+	    animation:  p6_crow forwards   ;
+	    -moz-animation:  p6_crow forwards ; 
+	    -webkit-animation:  p6_crow forwards ;
+	    -o-animation:  p6_crow forwards ;
+	    opacity: 0;
+}
+
+@-webkit-keyframes p6_crow{
+	0%{left:100%;opacity: 1}	
+	100%{left:69%;opacity: 1}	
+}
+
+.p6_sweat{
+		width:11%;
+		height:6%;
+		background:url("../images/p6/tu-03.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:60%;
+	    left:14%; 
+	    animation:  p1_sound forwards  infinite  ;
+	    -moz-animation:  p1_sound forwards  infinite; 
+	    -webkit-animation:  p1_sound forwards  infinite;
+	    -o-animation:  p1_sound forwards  infinite;
+	    opacity: 0;
+}
+.p6_farewell{
+		width:11%;
+		height:25%;
+		background:url("../images/p6/tu-04.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:3%;
+	    left:42%; 
+	    animation:  p6_farewell forwards  ;
+	    -moz-animation:  p6_farewell  forwards; 
+	    -webkit-animation:  p6_farewell  forwards;
+	    -o-animation:  p6_farewell  forwards;
+	    opacity: 0;
+}
+@-webkit-keyframes p6_farewell{
+	0%{
+		top:-100%;
+		opacity: 1;
+	}
+	100%{
+		top:3%;
+		opacity: 1;
+	}	
+}
+
+
+.p6_rire{
+		width:11%;
+		height:25%;
+		background:url("../images/p6/tu-05.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:12%;
+	    left:55%; 
+	    animation:  p6_rire forwards  ;
+	    -moz-animation:  p6_rire forwards; 
+	    -webkit-animation:  p6_rire forwards;
+	    -o-animation:  p6_rire forwards;
+	    opacity: 0;
+}
+@-webkit-keyframes p6_rire{
+	0%{
+		top:100%;
+		opacity: 1;
+	}
+	100%{
+		top:12%;
+		opacity: 1;
+	}	
+}
+
+/* 第7屏 */
+.p7{
+	background: url('../images/p7/di-07.jpg') no-repeat;
+}
+.p7_clockwise{
+		width:5%;
+		height:2%;
+		background:url("../images/p7/tu-01.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:28.5%;
+	    left:11%; 
+}
+.p7_second-hand{
+		width:2%;
+		height:4.5%;
+		background:url("../images/p7/tu-02.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:25%;
+	    left:14%; 
+	    animation:  p7_second-hand linear infinite  ;
+	    -moz-animation:  p7_second-hand linear infinite; 
+	    -webkit-animation:  p7_second-hand linear infinite;
+	    -o-animation:  p7_second-hand linear infinite;
+	    opacity: 0;
+	    transform-origin: bottom center;
+}
+@-webkit-keyframes p7_second-hand{
+	0%{transform: rotate(0deg);opacity: 1}	
+	100%{transform: rotate(360deg);opacity: 1}	
+}
+
+.p7_ghost{
+		width:26%;
+		height:24%;
+		background:url("../images/p7/tu-03.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:23%;
+	    left:29%; 
+	    animation:  p7_ghost linear forwards  ;
+	    -moz-animation:  p7_ghost linear forwards; 
+	    -webkit-animation:  p7_ghost linear forwards;
+	    -o-animation:  p7_ghost linear forwards;
+	    opacity: 0;
+	    transform-origin: bottom center;
+}
+@-webkit-keyframes p7_ghost{
+	0%{height: 0;top:50%;opacity: 1}	
+	100%{height: 24%;top:23%;opacity: 1}	
+}
+.p7_sigh{
+		width:14%;
+		height:9%;
+		background:url("../images/p7/tu-04.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:65%;
+	    left:40%; 
+	    animation:  p1_sound linear infinite  ;
+	    -moz-animation:  p1_sound linear infinite; 
+	    -webkit-animation:  p1_sound linear infinite;
+	    -o-animation:  p1_sound linear infinite;
+	    opacity: 0;
+
+}
+.p7_shiyi{
+		width:47%;
+		height:5%;
+		background:url("../images/p7/tu-05.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:8%;
+	    left:10%; 
+	    animation: p1_left  forwards  ;
+	    -moz-animation: p1_left  forwards; 
+	    -webkit-animation: p1_left  forwards;
+	    -o-animation: p1_left  forwards;
+	    opacity: 0;
+}
+.p7_shenyou{
+		width:47%;
+		height:5%;
+		background:url("../images/p7/tu-06.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:16%;
+	    left:44%; 
+	    animation:  p1_right  forwards  ;
+	    -moz-animation:  p1_right  forwards; 
+	    -webkit-animation:  p1_right  forwards;
+	    -o-animation:  p1_right  forwards;
+	    opacity: 0;
+}
+
+.p8{
+	background:url('../images/p8/di-08.jpg') no-repeat;
+
+}
+.p8_font{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/tu-01.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+	    animation:  p8_font forwards  ;
+	    -moz-animation:  p8_font forwards; 
+	    -webkit-animation:  p8_font forwards;
+	    -o-animation:  p8_font forwards;
+	    opacity: 0;
+}
+
+@-webkit-keyframes p8_font{
+	0%{height: 0;width:0;opacity: 0}	
+	100%{height:100%;width:100%;opacity: 1}
+		
+}
+.p8_back{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/tu-02.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+	    animation:  p8_back forwards  ;
+	    -moz-animation:  p8_back forwards; 
+	    -webkit-animation:  p8_back forwards;
+	    -o-animation:  p8_back forwards;
+	    opacity: 0.5;
+}
+@-webkit-keyframes p8_back{
+	0%{opacity:0;}	
+	10%{opacity:0.5;}	
+	20%{opacity:0;}	
+	30%{opacity:0.5;}	
+	40%{opacity:0;}	
+	50%{opacity:0.5;}	
+	60%{opacity:0;}	
+	70%{opacity:0.5;}	
+	80%{opacity:0;}	
+	90%{opacity:0.5;}	
+	100%{opacity:0;}	
+		
+}
+.p9{
+	background: url('../images/p8/di-08.jpg') no-repeat;
+}
+.p9_font{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/tu-03.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+	    animation: p9_font forwards  ;
+	    -moz-animation: p9_font forwards; 
+	    -webkit-animation: p9_font forwards;
+	    -o-animation: p9_font forwards;
+	    opacity: 1;
+
+}
+@-webkit-keyframes p9_font{
+	0%{height: 100%;width:100%;opacity: 1}	
+	50%{height:0%;width:0%;opacity:1}
+	100%{height: 100%;width:100%;opacity: 1}
+}
+
+
+.p10{
+	background:url('../images/p8/di-08.jpg') no-repeat;
+}
+.p10_font{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/tu-04.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+	    animation:  p9_font forwards  ;
+	    -moz-animation:  p9_font forwards; 
+	    -webkit-animation:  p9_font forwards;
+	    -o-animation:  p9_font forwards;
+	    opacity: 0;
+}
+.p10_boy{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/tu-05.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+}
+.p10_eyebrow{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/meimao.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+	    animation:  p10_eyebrow  alternate infinite  ;
+	    -moz-animation:  p10_eyebrow  alternate infinite; 
+	    -webkit-animation:  p10_eyebrow  alternate infinite;
+	    -o-animation:  p10_eyebrow  alternate infinite;
+	    opacity: 0;
+}
+
+@-webkit-keyframes p10_eyebrow{
+	0%{top:0%;opacity: 1}	
+	100%{top:-1%;opacity:1}
+	
+}
+
+.p11{
+	background: url('../images/p8/di-08.jpg') no-repeat;
+}
+.p11_font{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/2.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%;
+	    animation:  p9_font forwards  ;
+	    -moz-animation:  p9_font forwards; 
+	    -webkit-animation:  p9_font forwards;
+	    -o-animation:  p9_font forwards;
+	    opacity: 0; 
+	  
+}
+.p11_face{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/5.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+	    animation:  p11_face forwards  ;
+	    -moz-animation:  p11_face forwards; 
+	    -webkit-animation:  p11_face forwards;
+	    -o-animation:  p11_face forwards;
+	    opacity: 0;
+}
+
+@-webkit-keyframes p11_face{
+	0%{top:-100%;opacity: 1}	
+	100%{top:0;opacity:1}
+	
+}
+
+.p11_times{
+		width:100%;
+		height:100%;
+		background:url("../images/p8/zuih.png")no-repeat;
+		background-size: 100% 100%;
+		position: absolute;
+		top:0%;
+	    left:0%; 
+	     animation:  p10_eyebrow  alternate infinite  ;
+	    -moz-animation:  p10_eyebrow  alternate infinite; 
+	    -webkit-animation:  p10_eyebrow  alternate infinite;
+	    -o-animation:  p10_eyebrow  alternate infinite;
+	    opacity: 0;
+}
+
+ /* 重叠样式*/
+ .swiper-slide{
+ 	width: 100%;
+ 	height: 100%;
+ 	background-size: cover;
+ } 
